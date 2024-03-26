@@ -8,4 +8,49 @@
 <body>
     <h1>Welcome to DIVE</h1>
 </body>
+
+<form action="/process_input_form" method="post">
+    <label for="supportingTool">Select a supporting tool:</label>
+        <select id="supportingTool" name="supportingTool">
+            <option value="Frame">Frame</option>
+            <option value="ScaleSim">ScaleSim</option>
+            <option value="MAESTRO">MAESTRO</option>
+            <option value="Timeloop">Timeloop</option>
+          </select>
+
+    <label for="modelOptions">Select a model:</label>
+        <select id="modelOptions" name="modelOptions">
+            <option value="GPT 1B">GPT 1B</option>
+            <option value="GPT 3B">GPT 3B</option>
+            <option value="LLAMA2 7B">LLAMA2 7B</option>
+            <option value="LLAMA 33B">LLAMA 33B</option>
+            <option value="LLAMA2 70B">LLAMA2 70B</option>
+            <option value="GPT-3 175B">GPT-3 175B</option>
+            <option value="PaLM2 540B">PaLM2 540B</option>
+            <option value="LLAMA2 13B">LLAMA2 13B</option>
+        </select>
+
+    <label for="optimizations">Select optimizations (ctrl/cmd click to select multiple):</label>
+        <select id="optimizations" name="optimizations" multiple>
+            <option value="Quantization">Quantization</option>
+            <option value="Mixed Precision Training">Mixed Precision Training</option>
+            <option value="Sparsification">Sparsification</option>
+            <option value="Low Rank">Low Rank</option>
+            <option value="Kernel Fusion">Kernel Fusion</option>
+            <option value="Distributed Workload">Distributed Workload</option>
+        </select>
+
+    <label for="system">Select a hardware platform:</label>
+        <select id="system" name="system">
+            <option value="NVIDIA Tesla V100">NVIDIA Tesla V100</option>
+            <option value="NVIDIA Tesla A100">NVIDIA Tesla A100</option>
+            <option value="NVIDIA Hopper H100">NVIDIA Hopper H100</option>
+            <option value="NVIDIA RTX 4090">NVIDIA RTX 4090</option>
+            <option value="TPUv3">TPUv3</option>
+            <option value="TPUv4">TPUv4</option>
+            <option value="Intel Sapphire Rapids Core">Intel Sapphire Rapids Core</option>
+        </select>
+
+    <button type="submit">Submit</button> 
+</form>
 </html>
